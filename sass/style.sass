@@ -1,0 +1,2373 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+@font-face 
+    font-family: "Philosopher"
+    src: url('../fonts/Philosopher-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "Philosopher"
+    src: url('../fonts/Philosopher-Bold.ttf')
+    font-weight: bold
+    font-style: normal
+
+@font-face 
+    font-family: "NotoSans", sans-serif
+    src: url('../fonts/NotoSans-ThinItalic.ttf')
+    font-weight: 100
+    font-style: normal
+
+@font-face 
+    font-family: "NotoSans", sans-serif
+    src: url('../fonts/NotoSans-Light.ttf')
+    font-weight: 300
+    font-style: normal
+
+@font-face 
+    font-family: "NotoSans", sans-serif
+    src: url('../fonts/NotoSans-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "NotoSans", sans-serif
+    src: url('../fonts/NotoSans-Medium.ttf')
+    font-weight: 500
+    font-style: normal
+
+html
+    font-family: "NotoSans"
+    font-weight: 300
+    scroll-behavior: smooth
+
+body
+    position: relative
+
+
+$fon2: linear-gradient(226.51deg, #F1DFD1 39.15%, #ADBDD7 76.56%)
+$fon_blue:#ADBDD7
+$color-beige:#F1DFD1
+$color_button:#074784
+$color_button_hover:#15499F
+$color_button_active:#0B2550
+$color_button_white:#fff
+$blue:#ADBDD7
+$fon:linear-gradient(226.51deg, #E3F0F8 39.15%, #FFF6EF 76.56%)
+$fon3:#ADBDD7
+$pink:#F1DFD1
+$fon_circle:linear-gradient(143.92deg, rgba(133, 102, 78, 0.4) 14.85%, rgba(20, 43, 82, 0.4) 53.25%, rgba(44, 44, 44, 0.4) 85.74%)
+$icon: linear-gradient(144.18deg, #ADBDD7 26.91%, #C3D7E3 51.5%, #F1DFD1 97.64%)
+$text_color:#000
+$color_form: #5696D3
+
+$h1:42px
+$h2:36px
+$h3:32px
+$h4:24px
+$text:18px
+$text_menu:18px
+$text_tarif:18px
+$text_button:20px
+$text_time:18px
+$text_reviews:18px
+$text_reviews_autor:18px
+$text_contact:16px
+$text_baner:30px
+
+$h1_1000:36px
+$h2_1000:32px
+$h3_1000:28px
+$h4_1000:20px
+$text_1000:18px
+$text_menu_1000:18px
+$text_tarif_1000:18px
+$text_button_1000:20px
+$text_time_1000:18px
+$text_reviews_1000:18px
+$text_reviews_autor_1000:16px
+$text_contact_1000:16px
+$text_baner_1000:28px
+
+$h1_768:28px
+$h2_768:24px
+$h3_768:22px
+$h4_768:18px
+$text_menu_768:28px
+$text_768:16px
+$text_tarif_768:18px
+$text_button_768:20px
+$text_time_768:18px
+$text_reviews_768:18px
+$text_reviews_autor_768:16px
+$text_contact_768:16px
+$text_baner_768:24px
+
+$h1_480:22px
+$h2_480:20px
+$h3_480:16px
+$h4_480:14px
+$text_480:14px
+$text_menu_480:24px
+$text_tarif_480:14px
+$text_button_480:18px
+$text_time_480:18px
+$text_reviews_480:14px
+$text_reviews_autor_480:14px
+$text_contact_480:12px
+$text_baner_480:20px
+
+$h1_360:22px
+$h2_360:20px
+$h3_360:16px
+$h4_360:14px
+$text_360:14px
+$text_menu_360:22px
+$text_tarif_360:14px
+$text_button_360:16px
+$text_time_360:14px
+$text_reviews_360:14px
+$text_reviews_autor_360:14px
+$text_contact_360:12px
+$text_baner_360:18px
+
+#timer5fd853625fe32b760f66b23cf0ec3d08
+    margin: 0 !important
+
+.owl-nav
+    margin: 0 !important
+.owl-prev
+    width: 50px
+    height: 50px
+    margin: 0 40px 0 0 !important
+    &:hover
+        opacity: 0.5
+        background: transparent !important
+
+.owl-next
+    width: 50px
+    height: 50px
+    margin: 0 !important
+    &:hover
+        opacity: 0.5
+        background: transparent !important
+
+.container
+    max-width: 1410px
+    margin: 0 auto
+.main-section
+    background: $fon2
+    min-height: 950px
+    padding-top: 10px 
+    position: relative
+    overflow: hidden
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 50px
+    &__logo
+        height: 90px
+    &__content-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        position: relative
+        height: 100%
+    &__timer
+        display: none
+.nav-menu
+    &__logo
+        display: none
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 40px
+        font-size: 20px
+        font-weight: bold
+        a
+            display: flex
+            justify-content: center
+            min-height: 42px
+            width: 100%
+            text-decoration: none
+            color:#000
+            padding: 10px 0
+            &:hover
+                color: $color_button_hover
+                border-bottom: 2px solid $color_button_hover
+            &:active
+                color: $color_button_active
+                border-bottom: 2px solid $color_button_active
+        &_active a
+            color: $color_button_hover
+            border-bottom: 2px solid $color_button_hover
+
+        &:last-child
+            margin-right: 0
+
+.social-icons
+    display: flex
+    flex-direction: row
+    &__item
+        margin-right: 10px
+        &:last-child
+            margin-right: 0
+        &:hover
+            opacity: 0.5
+            transition: 0.2s all
+.left-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 40px 0
+    max-width: 600px
+    position: relative
+    &__title
+        font-size: $h1
+        position: relative
+        font-family: "Philosopher"
+        font-weight: bold
+        line-height: 120%
+        letter-spacing: 0.02em
+        color: $text_color
+        margin-bottom: 20px
+    &__text
+        font-family: "Philosopher"
+        font-weight: regular
+        font-size: $text_baner
+        line-height: 34px
+        letter-spacing: 0.02em
+        color: $text_color
+        margin-bottom: 40px
+    &__info
+        margin-bottom: 150px
+.right-wrapper
+    width: 50%
+    z-index: 5
+    &__img
+        width: 770px
+        position: absolute
+        top: 10px
+        right: 40px
+        z-index: 5
+    &__elipse
+        position: absolute
+        top: -40px
+        right: -130px
+.elipse
+    opacity: 0.5
+    &_curators-first
+        width: 350px
+        height: 350px
+    &_curators-second
+        width: 520px
+        height: 520px
+    &_feedback-left
+        width: 720px
+        height: 720px
+        opacity: 0.5
+    &_feedback-right
+        transform: rotate(73.16deg)
+        width: 500px
+        height: 500px
+
+.timer
+    &__title
+        font-size: $h2
+        color: $color_button
+        font-family: "Philosopher"
+        font-weight: bold
+        line-height: 40px
+        letter-spacing: 0.02em
+        margin-bottom: 30px
+        &_bold
+            font-size: $h1
+            color: $text_color
+            font-family: "Philosopher"
+            font-weight: bold
+            line-height: 120%
+            letter-spacing: 0.02em
+.icons
+    display: flex
+    flex-direction: row
+    &__item
+        width: 40px
+        height: 40px
+        border:1px solid #488AEA
+        border-radius:20px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 17px
+        &:hover
+            background: #F0F0F0
+        &:last-child
+            margin-right: 0
+        i
+            font-size: 21px
+.button
+    &__main-btn
+        width: 210px
+        height: 60px
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $text_button
+        color: $color_button_white
+        background: $color_button
+        border-radius: 4px
+        border:2px solid $color_button
+        transition: 0.3s all
+
+        &:hover
+            //background: $color_button_hover
+            background: none
+            border:2px solid $color_button
+            color: $text_color
+            transition: 0.3s all
+        &:active
+            background: $color_button_active
+            color: $color_button_white
+            border:2px solid $color_button_active
+            transition: 0.3s all
+.game-for-section
+    background: $fon_blue
+    padding: 70px 0
+    &__content
+    &__title
+        width: 100%
+        text-align: center
+        margin-bottom: 30px
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h2
+        line-height: 40px
+        letter-spacing: 0.02em
+    &__left-items
+        width: 500px
+        margin-right: 120px
+    &__right-items
+        width: 500px
+    &__items
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+.game-what-section
+    background: $pink
+    padding: 70px 0
+    &__title
+        text-align: center
+        margin-bottom: 30px
+        font-family: "Philosopher"
+        font-style: normal
+        font-weight: 700
+        font-size: $h2
+        line-height: 40px
+        letter-spacing: 0.02em
+    &__left-items
+        width: 500px
+        margin-right: 120px
+    &__right-items
+        width: 500px
+    &__items
+        display: flex
+        flex-direction: row
+        justify-content: center
+        margin-bottom: 30px
+    &__button
+        width: 100%
+        text-align: center
+
+.how-going-section
+    background: $pink
+    padding: 70px 0
+    &__title
+        text-align: center
+        margin-bottom: 30px
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h2
+        line-height: 40px
+        letter-spacing: 0.02em
+    &__left-items
+        width: 500px
+        margin-right: 120px
+    &__right-items
+        width: 500px
+    &__items
+        display: flex
+        flex-direction: row
+        justify-content: center
+        margin-bottom: 30px
+    &__text
+        width: 740px
+        margin: auto
+    &__rule
+        font-size: $text
+        line-height: 120%
+        text-align: center
+    &__main-rule
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h3
+        line-height: 50%
+        letter-spacing: 0.02em
+
+.curators-section
+    background: $fon_blue
+    padding: 70px 0
+    display: flex
+    justify-content: center
+    overflow: hidden
+    &__content
+        max-width: 1240px
+    &__title
+        text-align: center
+        margin-bottom: 50px
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h2
+        line-height: 40px
+        letter-spacing: 0.02em
+    &__cards-curators
+        margin-bottom: 50px
+        position: relative
+    &__goal
+        text-align: center
+        font-size: $text
+        line-height: 120%
+    &__goal-game
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h3
+        line-height: 50%
+        letter-spacing: 0.02em
+    &__striped-circle_first
+        position: absolute
+        left: -150px
+        bottom: 170px
+    &__striped-circle_second
+        position: absolute
+        left: -75px
+        top: -15px
+    &__elipse-curators-first
+        position: absolute
+        left: -450px
+        top: -270px
+    &__elipse-curators-second
+        position: absolute
+        right: -530px
+        bottom: -270px
+.striped-circle
+    opacity: 0.5
+    &_first
+        width: 245px
+        height: 245px
+    &_second
+        width: 155px
+        height: 155px
+    &_tariffs
+        width: 410px
+        height: 410px
+    &_feedback
+        width: 590px
+        height: 590px
+
+.cards
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &__item
+        width: 570px
+        padding-bottom: 30px
+        position: relative
+    &__foto-box
+        position: relative
+        display: flex
+        justify-content: center
+        width: 100%
+        height: 500px
+        background: url(../img/fon_curators.png)
+        background-size: cover
+        background-position: left top
+        margin-bottom: 20px
+    &__foto
+        height: 600px
+        position: absolute
+        bottom: 0
+    &__info
+        margin-bottom: 40px
+    &__FIO
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h3
+        line-height: 50%
+        text-align: center
+        letter-spacing: 0.02em
+        margin-bottom: 20px
+    &__profession
+        min-height: 90px
+        font-style: italic
+        font-weight: 100
+        font-size: $h4
+        text-align: center
+        letter-spacing: 0.02em
+        margin-bottom: 20px
+    &__description
+        font-size: $text
+        line-height: 120%
+        text-align: center
+    &__social
+        width: 100%
+        display: flex
+        justify-content: center
+
+.items
+    &__item
+        width: 100%
+        display: flex
+        flex-basis: row
+        align-items: center
+        margin-bottom: 20px
+    &__icon
+        min-width: 100px
+        height: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: $icon
+        border-radius: 100px
+        margin-right: 20px
+    &__img
+        width: 50px
+        height: 50px
+    &__text
+        width: 100%
+        font-size: $text
+
+.tariffs-section
+    min-height: 805px
+    background: $fon_blue
+    padding: 70px 0
+    &__content
+        padding: 0 10px
+    &__title
+        text-align: center
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h2
+        letter-spacing: 0.02em
+        margin-bottom: 30px
+    &__cards
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+
+.item-tariffs
+    width: 420px
+    padding: 20px 0 40px 0
+    background: #FFFFFF
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: relative
+    overflow: hidden
+    &__title
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 80px
+        width: 100%
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h3
+        line-height: 120%
+        text-align: center
+        letter-spacing: 0.02em
+        margin-bottom: 30px
+        z-index: 5
+    &__list
+        width: 350px
+        min-height: 300px
+        font-weight: regular
+        font-size: $text_tarif
+        line-height: 115%
+        margin-bottom: 30px
+        padding-left: 20px
+        list-style-type: disc
+        z-index: 5
+        li
+            margin-bottom: 10px
+    &__price
+        margin-bottom: 30px
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h3
+        line-height: 50%
+        display: flex
+        align-items: center
+        text-align: center
+        letter-spacing: 0.02em
+        z-index: 5
+    &__button
+        z-index: 5
+    &__striped-circle
+        position: absolute
+        right: -230px
+        bottom: -190px
+
+// .reviews-section
+//     background: $pink
+//     padding: 70px 0
+//     &__content
+//     &__title
+//         text-align: center
+//         font-family: "Philosopher"
+//         font-weight: bold
+//         font-size: $h2
+//         line-height: 40px
+//         letter-spacing: 0.02em
+//         margin-bottom: 40px
+//     &__reviews-box
+//         width: 100%
+//         margin-bottom: 40px
+//     &__arrows
+//         width: 100%
+//         text-align: center
+
+// .arrows
+//     &__left
+//         margin-right: 40px
+
+// .reviews
+//     display: flex
+//     flex-direction: row
+//     justify-content: space-between
+//     align-items: flex-start
+//     &__item
+//         position: relative
+//         display: flex
+//         flex-direction: row
+//         width: 400px
+//     &__avatar
+//     &__foto
+//         width: 110px
+//         height: 110px
+//     &__comment
+//         position: relative
+//         display: flex
+//         flex-direction: column
+//         align-items: flex-start
+//         background: #FFFFFF
+//         border-radius: 10px
+//         margin-left: 30px
+//         min-width: 200px
+//         padding: 10px
+//         filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25))
+//         z-index: 5
+//     &__icon-comment
+//         position: absolute
+//         left: -30px
+//         top: 80px
+//     &__text
+//         font-weight: 300
+//         font-size: $text_reviews
+//         line-height: 130%
+//         color: $text_color
+//         margin-bottom: 10px
+//         z-index: 5
+//     &__autor
+//         font-weight: 500
+//         font-size: $text_reviews_autor
+//         line-height: 25px
+//         color: $color_button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reviews-section
+    background: $pink
+    padding: 70px 0
+    &__content
+        width: 100%
+    &__title
+        width: 100%
+        text-align: center
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h2
+        line-height: 40px
+        letter-spacing: 0.02em
+        margin-bottom: 40px
+    &__arrows
+        width: 100%
+        text-align: center
+
+.arrows
+    &__left
+        margin-right: 40px
+
+.reviews
+    width: 100%
+    display: flex
+    justify-content: space-between
+    &__item
+        padding: 20px
+        position: relative
+        display: flex
+        flex-direction: row
+    &__avatar
+        max-width: 110px
+    &__foto
+        width: 100%
+    &__comment
+        width: 100%
+        position: relative
+        display: flex
+        flex-direction: column
+        background: #FFFFFF
+        border-radius: 10px
+        margin-left: 30px
+        padding: 15px
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25))
+        z-index: 5
+    &__icon-comment
+        max-width: 45px
+        position: absolute
+        left: -25px
+        top: 25%
+    &__text
+        font-weight: 300
+        font-size: $text_reviews
+        line-height: 130%
+        color: $text_color
+        margin-bottom: 10px
+        z-index: 5
+    &__autor
+        font-weight: 500
+        font-size: $text_reviews_autor
+        line-height: 25px
+        color: $color_button
+
+
+
+
+
+
+
+
+
+
+
+
+.footer
+    background: $fon_blue
+    padding: 70px 0
+    &__content
+        padding: 0
+        display: flex
+        flex-direction: column
+    &__icons-pay-box
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 60px
+    &__contacts
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__organization
+        &-text
+            font-weight: 300
+            font-size: $text
+            line-height: 120%
+            color: $text_color
+    &__phone
+        &-info
+            font-weight: 300
+            font-size: $text
+            line-height: 120%
+            color: $text_color
+
+.icons-pay
+    &__icon
+        height: 40px
+
+.feedback-section
+    background: $fon2
+    padding: 120px 0
+    overflow: hidden
+    &__content
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: right
+        align-items: center
+    &__iphone
+        z-index: 5
+        position: absolute
+        left: 165px
+        top:-110px
+    &__form
+        z-index: 5
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 40px
+        width: 570px
+        background: $color_form
+        border-radius: 10px
+    &__form-title
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h3
+        line-height: 50%
+        text-align: center
+        letter-spacing: 0.02em
+        color: $text_color
+        margin-bottom: 25px
+    &__form-description
+        font-weight: 300
+        font-size: $text
+        line-height: 120%
+        text-align: center
+        color: $text_color
+        margin-bottom: 25px
+    &__form-name
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__form-age
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__form-email
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__form-phone-number
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__form-comment
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__elipse-left
+        position: absolute
+        left: -245px
+        top: -10px
+    &__elipse-right
+        position: absolute
+        right: -180px
+        top: -220px
+    &__striped-circle
+        position: absolute
+        left: 205px
+        top: 40px
+
+
+
+.pop-up
+    position: fixed
+    display: none
+    align-items: center
+    justify-content: center
+    top:0px
+    left:0px
+    width:100vw
+    height:100vh
+    padding: 120px 0
+    overflow: hidden
+    z-index: 10
+    background: rgba(0, 0, 0, 0.7)
+    transition: 0.3s all
+    &__form
+        z-index: 5
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 40px
+        width: 570px
+        background: $color_form
+        border-radius: 10px
+    &__form-title
+        font-family: "Philosopher"
+        font-weight: bold
+        font-size: $h3
+        line-height: 50%
+        text-align: center
+        letter-spacing: 0.02em
+        color: $text_color
+        margin-bottom: 25px
+    &__form-name
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__form-age
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__form-email
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__form-phone-number
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+    &__form-comment
+        width: 100%
+        padding: 20px
+        margin-bottom: 25px
+        background: $color_button_white
+        border-radius: 5px
+        border: 0
+        &::placeholder
+            font-weight: 300
+            font-size: $text_contact
+            line-height: 120%
+            color: $fon_blue
+
+.hamburger
+    position: absolute
+
+@media ( max-width: 1439px)
+    .container
+        padding: 0 20px
+    .right-wrapper
+        &__elipse
+            top: -20px
+            right: -150px
+        &__img
+            top: 70px
+            right: -50px
+
+    .game-for-section
+        &__left-items
+            margin-right: 0
+            width: 45%
+        &__right-items
+            width: 45%
+        &__items
+            justify-content: space-between
+
+    .game-what-section
+        &__left-items
+            margin-right: 0
+            width: 45%
+        &__right-items
+            width: 45%
+        &__items
+            justify-content: space-between
+
+    .how-going-section
+        &__left-items
+            margin-right: 0
+            width: 45%
+        &__right-items
+            width: 45%
+        &__items
+            justify-content: space-between
+
+@media ( max-width: 1250px)
+    .main-section
+        padding-top: 0px
+        &__nav-container
+            margin-top: 20px
+        &__social
+            display: none
+    .nav-menu
+        display: flex
+        justify-content: right
+        width: 100%
+        position: fixed
+        top: 0
+        right: -100%
+        height: 100vh
+        background: rgba(0, 0, 0, 0.7)
+        z-index: 500
+        transition: 0.3s all
+        padding: 0
+        a
+            padding: 15px 0
+            &:hover
+                    color: $color_button_hover
+                    border-bottom: 0
+            &:active
+                    color: $color_button_active
+                    border-bottom: 0
+        &__content
+            width: 50%
+            height: 100vh
+            background: $fon2
+            padding: 20px
+        &__logo-box
+            height: 93px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: left
+            margin-bottom: 30px
+        &__logo
+            display: block
+            height: 90px
+        &__list
+            flex-direction: column
+            text-align: center
+            align-items: center
+            padding: 20px 0
+            height: 100%
+        &__list-item
+            display: flex
+            justify-content: center
+            align-items: center
+            background: rgba(255, 255, 255, 0)
+            width: 100%
+            padding: 0
+            margin-bottom: 40px
+            margin-right: 0
+            border-bottom: 1px solid rgba(227, 240, 248, 1)
+            a
+                font-family: "Philosopher"
+                font-weight: bold
+                font-size: $h3_1000
+                line-height: 30px
+            &:hover
+                background: rgba(173, 189, 215, 0.3)
+                transition: 0.3s all
+                a
+                    color: $color_button
+        &_active
+            right: 0
+    .hamburger
+        width: 50px
+        position: fixed
+        right: 20px
+        z-index: 550
+        span
+            height: 4px
+            width: 100%
+            display: block
+            background: $color_button
+            margin-bottom:10px
+            border-radius: 4px
+            transition: 0.3s all
+            &:last-child
+                margin-bottom:0
+        &_active
+            span
+                margin-bottom: -4px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                     display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .main-section
+        min-height: 768px
+        &__nav-container
+            margin-bottom: 20px
+    .left-wrapper
+        max-width: 480px
+        padding: 30px 0
+        &__title
+            font-size: $h1_1000
+            margin-bottom: 10px
+        &__text
+            font-size: $text_baner_1000
+            font-weight: 400
+            line-height: 32px
+        &__info
+            margin-bottom: 120px
+    .timer
+        &__title
+            font-size: $h2_1000
+            line-height: 36px
+            &_bold
+                font-size: $h1_1000
+                line-height: 40px
+    .right-wrapper
+        &__elipse
+            top: -20px
+            right: -150px
+            img
+                width: 700px
+                height: 700px
+        &__img
+            width: 530px
+            top: 90px
+            right: -50px
+
+    .reviews
+        &__item
+            width: 70%
+            margin: 0 auto
+        &__avatar
+            max-width: 170px
+        &__icon-comment
+            max-width: 45px
+            position: absolute
+            left: -25px
+            top: 50%
+
+@media ( max-width: 1000px)
+    #timer5fd853625fe32b760f66b23cf0ec3d08
+        min-width: 300px !important
+        height: 90px !important
+        padding: 0 !important
+        margin: 0 !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d08-days
+        width: 90px !important
+        height: 90px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d08-hours
+        width: 90px !important
+        height: 90px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d08-minutes
+        width: 90px !important
+        height: 90px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d08-secundes
+        width: 90px !important
+        height: 90px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d08-days
+        font-size: 34px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d08-days
+        font-size: 12px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d08-hours
+        font-size: 34px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d08-hours
+        font-size: 12px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d08-minutes
+        font-size: 34px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d08-minutes
+        font-size: 12px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d08-secundes
+        font-size: 34px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d08-secundes
+        font-size: 12px !important
+
+    .timer-element
+        width: 90px !important
+        height: 90px !important
+
+    .timer-separator
+        height: 90px !important
+
+    .main-section
+        min-height: 768px
+        &__nav-container
+            margin-bottom: 20px
+    .left-wrapper
+        max-width: 480px
+        padding: 30px 0
+        &__title
+            font-size: $h1_1000
+            margin-bottom: 10px
+        &__text
+            font-size: $text_baner_1000
+            font-weight: 400
+            line-height: 32px
+        &__info
+            margin-bottom: 120px
+    .right-wrapper
+        &__elipse
+            top: -30px
+            right: -120px
+            img
+                width: 700px
+                height: 700px
+        &__img
+            width: 530px
+            top: 90px
+            right: -10px
+    .timer
+        &__title
+            font-size: $h2_1000
+            line-height: 36px
+            margin-bottom: 20px
+            &_bold
+                font-size: $h1_1000
+                line-height: 40px
+
+    .game-for-section
+        &__title
+            font-size: $h2_1000
+            line-height: 36px
+            letter-spacing: 0
+
+    .game-what-section
+        &__title
+            font-size: $h2_1000
+            line-height: 36px
+            letter-spacing: 0
+
+    .how-going-section
+        &__title
+            font-size: $h2_1000
+            line-height: 36px
+            letter-spacing: 0
+        &__text
+            width: 100%
+        &__rule
+            font-size: $text_1000
+        &__main-rule
+            font-size: $h3_1000
+            line-height: 30px
+            letter-spacing: 0
+
+    .curators-section
+        &__content
+            max-width: 100%
+        &__title
+            font-size: $h2_1000
+            line-height: 36px
+        &__goal
+            font-size: $text_1000
+        &__goal-game
+            font-size: $h3_1000
+        &__striped-circle_first
+            display: none
+        &__striped-circle_second
+            left: 370px
+            top: -140px
+        &__elipse-curators-first
+            left: -235px
+            top: -270px
+        &__elipse-curators-second
+            right: -360px
+            bottom: -485px
+
+    .cards
+        &__item
+            width: 455px
+        &__FIO
+            font-size: $h3_1000
+        &__profession
+            min-height: 72px
+            font-size: $h4_1000
+        &__description
+            font-size: $text_1000
+
+    .striped-circle
+        &_second
+            width: 150px
+            height: 150px
+        &_feedback
+
+    .elipse
+        &_feedback-left
+            width: 430px
+            height: 430px
+        &_feedback-right
+            width: 415px
+            height: 415px
+
+    .tariffs-section
+        min-height: 100%
+        padding: 70px 0
+        &__title
+            font-size: $h2_1000
+
+    .item-tariffs
+        width: 300px
+        &__title
+            font-size: 26px
+        &__list
+            min-height: 350px
+            width: 100%
+            font-size: $text_tarif_1000
+            padding: 0 30px
+        &__price
+            font-size: $h3_1000
+        &__striped-circle
+            right: -320px
+            bottom: -145px
+
+    .feedback-section
+        padding: 70px 0
+        &__iphone
+            width: 600px
+            left: -100px
+            top:-45px
+        &__form
+            width: 460px
+            padding: 30px
+        &__form-title
+            font-size: $h3_1000
+            line-height: 30px
+        &__form-description
+            font-size: $text_1000
+            line-height: 120%
+            margin-bottom: 20px
+        &__form-name
+            margin-bottom: 20px
+            &::placeholder
+                font-size: $text_contact_1000
+                line-height: 120%
+        &__form-age
+            margin-bottom: 20px
+            &::placeholder
+                font-size: $text_contact_1000
+                line-height: 120%
+        &__form-email
+            margin-bottom: 20px
+            &::placeholder
+                font-size: $text_contact_1000
+                line-height: 120%
+        &__form-phone-number
+            margin-bottom: 20px
+            &::placeholder
+                font-size: $text_contact_1000
+                line-height: 120%
+        &__form-comment
+            margin-bottom: 20px
+            &::placeholder
+                font-size: $text_contact_1000
+                line-height: 120%
+        &__elipse-left
+            left: 745px
+            top: 500px
+        &__elipse-right
+            right: -180px
+            top: -220px
+        &__striped-circle
+            left: -100px
+            top: 45px
+
+    .reviews-section
+        &__title
+            font-size: $h2_1000
+            margin-bottom: 30px
+        &__reviews-box
+            margin-bottom: 30px
+        &__content
+            justify-content: center
+
+    .reviews
+        &__avatar
+            max-width: 130px
+        &__text
+            font-size: $text_reviews_1000
+        &__autor
+            font-size: $text_reviews_autor_1000
+
+    .arrows
+        &__left
+            margin-right: 20px
+
+    .footer
+        &__organization
+            &-text
+                font-size: $text_1000
+        &__phone
+            &-info
+                font-size: $text_1000
+
+@media (max-width: 768px)
+    //.container
+    //    width: 720px
+    .timer-element
+        width: 110px !important
+        height: 110px !important
+
+    .timer-separator
+        height: 110px !important
+
+    .main-section
+        min-height: 750px
+        &__nav-container
+            margin-bottom: 0px
+        &__content-container
+            min-height: 380px
+        &__timer
+            display: flex
+            flex-direction: column
+            position: relative
+            z-index:100
+            background: $pink
+            justify-content: center
+            padding: 40px 0
+
+    .timer
+        &__title
+            text-align: center
+            font-size: $h2_768
+            line-height: 27px
+            margin-bottom: 30px
+        &__title_bold
+            font-size: $h1_768
+            line-height: 31px
+
+    .left-wrapper
+        max-width: 365px
+        align-items: center
+        &__title
+            font-size: $h1_768
+            line-height: 31px
+        &__text
+            font-size: $text_baner_768
+            line-height: 28px
+        &__timer
+            display: none
+        &__info
+            margin-bottom: 0px
+
+    .right-wrapper
+        &__img
+            width: 360px
+            top: 30px
+            right: 20px
+        &__elipse
+            top: -20px
+            right: -55px
+            img
+                width: 450px
+                height: 450px
+
+    .game-for-section
+        &__title
+            font-size: $h2_768
+            line-height: 27px
+            letter-spacing: 0.02em
+
+    .game-what-section
+        &__title
+            font-size: $h2_768
+            line-height: 27px
+            letter-spacing: 0.02em
+
+    .how-going-section
+        &__title
+            font-size: $h2_768
+            line-height: 27px
+            letter-spacing: 0.02em
+        &__rule
+            font-size: $text_768
+        &__main-rule
+            font-size: $h3_768
+
+    .curators-section
+        &__title
+            font-size: $h2_768
+            line-height: 27px
+        &__goal
+            font-size: $text_768
+        &__goal-game
+            font-size: $h3_768
+        &__striped-circle_second
+            left: 280px
+            top: -200px
+        &__elipse-curators-first
+            left: -140px
+            top: -245px
+        &__elipse-curators-second
+            right: -170px
+            bottom: -320px
+
+    .cards
+        &__item
+            width: 340px
+        &__foto-box
+            height: 450px
+        &__foto
+            height: 550px
+        &__FIO
+            font-size: $h3_768
+        &__profession
+            min-height: 66px
+            font-size: $h4_768
+        &__description
+            font-size: $text_768
+
+    .striped-circle
+        &_tariffs
+        &_feedback
+            width: 315px
+            height: 315px
+
+    .elipse
+        &_curators-first
+            width: 270px
+            height: 270px
+        &_curators-second
+            width: 290px
+            height: 290px
+        &_feedback-left
+            width: 340px
+            height: 340px
+        &_feedback-right
+            width: 515px
+            height: 515px
+
+    .tariffs-section
+        &__title
+            font-size: $h2_768
+        &__cards
+            flex-direction: column
+            align-items: center
+
+    .item-tariffs
+        width: 500px
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0px
+        &__title
+            font-size: $h3_768
+            height: 100%
+        &__list
+            min-height: 100%
+            width: 420px
+            font-size: $text_tarif_1000
+            padding: 0 30px
+        &__price
+            font-size: $h3_768
+        &__striped-circle
+            right: -150px
+            bottom: -230px
+
+    .items
+        &__text
+            width: 100%
+            font-size: $text_768
+        &__icon
+            min-width: 80px
+            height: 80px
+        &__img
+            width: 40px
+            height: 40px
+
+    .feedback-section
+        &__iphone
+            display: none
+        &__content
+            justify-content: center
+        &__form
+            width: 500px
+        &__form-title
+            font-size: $h3_768
+        &__form-description
+            font-size: $text_768
+        &__form-name
+            &::placeholder
+                font-size: $text_contact_768
+        &__form-age
+            &::placeholder
+                font-size: $text_contact_768
+        &__form-email
+            &::placeholder
+                font-size: $text_contact_768
+        &__form-phone-number
+            &::placeholder
+                font-size: $text_contact_768
+        &__form-comment
+            &::placeholder
+                font-size: $text_contact_768
+        &__elipse-left
+            left: 370px
+            top: 500px
+        &__elipse-right
+            right: -130px
+            top: -360px
+        &__striped-circle
+            left: -235px
+            top: 130px
+
+    .reviews-section
+        &__title
+            font-size: $h2_768
+
+    .reviews
+        &__text
+            font-size: $text_reviews_768
+        &__autor
+            font-size: $text_reviews_autor_768
+
+    .arrows
+        &__left
+            width: 40px
+        &__right
+            width: 40px
+
+    .nav-menu
+        &__logo
+            height: 60px
+        &__list-item
+            margin-bottom: 20px
+            a
+                font-size: $h2_768
+                line-height: 27px
+
+    .hamburger
+        width: 40px
+        span
+            height: 3px
+        &_active
+            span
+                margin-bottom: -3px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                     display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+
+    .footer
+        &__organization
+            &-text
+                font-size: $text_768
+        &__phone
+            &-info
+                font-size: $text_768
+
+    .icons-pay
+        &__icon
+            height: 30px
+
+    .footer .social-icons img
+        width: 30px
+        height: 30px
+
+@media ( max-width: 480px)
+    //.container
+    //    width: 440px
+    #timer5fd853625fe32b760f66b23cf0ec3d080
+        min-width: 420px !important
+        height: 90px !important
+        padding: 0 !important
+        margin: 0 auto !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d080-days
+        display: flex !important
+        flex-direction: column !important
+        justify-content: center !important
+        align-items: flex-start !important
+        padding: 0 !important
+        width: 90px !important
+        height: 90px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d080-hours
+        width: 90px !important
+        height: 90px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d080-minutes
+        width: 90px !important
+        height: 90px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d080-secundes
+        width: 90px !important
+        height: 90px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d080-days
+        font-size: 34px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d080-days
+        font-size: 12px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d080-hours
+        font-size: 34px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d080-hours
+        font-size: 12px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d080-minutes
+        font-size: 34px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d080-minutes
+        font-size: 12px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d080-secundes
+        font-size: 34px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d080-secundes
+        font-size: 12px !important
+
+    .owl-prev
+        width: 40px
+        height: 40px
+        margin: 0 20px 0 0 !important
+        img
+            width: 40px
+            height: 40px
+
+    .owl-next
+        width: 40px
+        height: 40px
+        img
+            width: 40px
+            height: 40px
+
+    .timer-element
+        width: 90px !important
+        height: 90px !important
+
+    .timer-separator
+        height: 90px !important
+
+    .main-section
+        min-height: 100%
+        &__logo
+            height: 60px
+        &__content-container
+            min-height: 250px
+        &__timer
+            padding: 30px 0
+    .nav-menu
+        &__content
+            width: 67%
+            padding: 20px
+        &__logo
+            height: 55px
+        &__logo-box
+            height: 65px
+        &__list-item
+            line-height: 25px
+            a
+                font-size: $h1_480
+
+    .timer
+        &__title
+            font-size: $h2_480
+            line-height: 22px
+        &__title_bold
+            font-size: $h1_480
+            line-height: 25px
+
+    .left-wrapper
+        min-width: 285px
+        padding: 20px 0
+        &__title
+            font-size: $h1_480
+            line-height: 26px
+        &__text
+            font-size: $text_baner_480
+            line-height: 24px
+        &__info
+            margin-bottom: 0px
+    .right-wrapper
+        &__elipse
+            top: 15px
+            right: -55px
+            img
+                width: 260px
+                height: 260px
+        &__img
+            width: 220px
+            top: 25px
+            right: -20px
+
+    .game-for-section
+        padding: 30px 0
+        &__title
+            font-size: $h2_480
+            line-height: 22px
+            letter-spacing: 0.02em
+        &__left-items
+            width: 100%
+        &__right-items
+            width: 100%
+        &__items
+            flex-direction: column
+
+    .game-what-section
+        padding: 30px 0
+        &__title
+            font-size: $h2_480
+            line-height: 22px
+            letter-spacing: 0.02em
+        &__left-items
+            width: 100%
+        &__right-items
+            width: 100%
+        &__items
+            flex-direction: column
+
+    .how-going-section
+        padding: 30px 0
+        &__title
+            font-size: $h2_480
+            line-height: 22px
+            letter-spacing: 0.02em
+        &__left-items
+            width: 100%
+        &__right-items
+            width: 100%
+        &__items
+            flex-direction: column
+        &__rule
+            font-size: $text_768
+        &__main-rule
+            font-size: $h3_768
+
+    .curators-section
+        padding: 30px 0
+        &__title
+            font-size: $h2_480
+            line-height: 22px
+            margin-bottom: 80px
+        &__cards-curators
+            display: flex
+            flex-direction: column
+            margin-bottom: 30px
+        &__goal
+            font-size: $text_480
+        &__goal-game
+            font-size: $h3_480
+        &__striped-circle_second
+            left: 370px
+            top: -820px
+        &__elipse-curators-first
+            left: -180px
+            top: 250px
+        &__elipse-curators-second
+            right: -150px
+            bottom: 400px
+
+    .cards
+        &__item
+            width: 100%
+            margin-bottom: 80px
+            &:last-child
+                margin-bottom: 0px
+        &__foto-box
+            width: 100%
+            height: 350px
+        &__foto
+            height: 400px
+        &__info
+            margin-bottom: 20px
+        &__FIO
+            font-size: $h3_480
+        &__profession
+            min-height: 34px
+            font-size: $h4_480
+        &__description
+            font-size: $text_480
+
+    .striped-circle
+        &_second
+            width: 100px
+            height: 100px
+        &_tariffs
+            width: 240px
+            height: 240px
+        &_feedback
+            width: 315px
+            height: 315px
+
+    .elipse
+        &_curators-first
+            width: 240px
+            height: 240px
+        &_curators-second
+            width: 200px
+            height: 200px
+        &_feedback-left
+            width: 340px
+            height: 340px
+        &_feedback-right
+            width: 380px
+            height: 380px
+
+    .tariffs-section
+        padding: 30px 0
+        &__title
+            font-size: $h2_480
+
+    .item-tariffs
+        width: 420px
+        &__title
+            font-size: $h3_480
+        &__list
+            width: 340px
+            font-size: $text_tarif_480
+            padding: 0 20px
+        &__price
+            font-size: $h3_480
+        &__striped-circle
+            right: -70px
+            bottom: -90px
+
+    .feedback-section
+        padding: 30px 0
+        &__form
+            width: 100%
+        &__form-title
+            font-size: $h3_480
+            margin-bottom: 20px
+        &__form-description
+            font-size: $text_480
+        &__form-name
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_480
+        &__form-age
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_480
+        &__form-email
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_480
+        &__form-phone-number
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_480
+        &__form-comment
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_480
+        &__elipse-left
+            left: 220px
+            top: 360px
+        &__elipse-right
+            right: -170px
+            top: -200px
+        &__striped-circle
+            left: -235px
+            top: 130px
+
+    .items
+        &__item
+            margin-bottom: 10px
+        &__text
+            width: 100%
+            font-size: $text_480
+        &__icon
+            min-width: 80px
+            height: 80px
+        &__img
+            width: 40px
+            height: 40px
+
+    .reviews-section
+        padding: 30px 0
+        &__title
+            font-size: $h2_480
+            margin-bottom: 30px
+
+    .arrows
+        &__left
+            margin-right: 20px
+
+    .reviews
+        &__item
+            flex-direction: column
+            width: 100%
+        &__avatar
+            margin: 0 auto
+            margin-bottom: 20px
+        &__comment
+            margin: 0
+        &__icon-comment
+            display: none !important
+        &__text
+            font-size: $text_reviews_autor_480
+        &__autor
+            font-size: $text_reviews_autor_480
+
+    .button
+        &__main-btn
+            width: 170px
+            height: 44px
+            font-size: $text_button_480
+
+    .footer
+        padding: 30px 0
+        &__content
+
+        &__organization
+            text-align: center
+            margin-bottom: 20px
+            &-text
+                font-size: $text_480
+        &__phone
+            text-align: center
+            margin-bottom: 20px
+            &-info
+                font-size: $text_480
+        &__contacts
+            flex-direction: column
+            justify-content: center
+        &__icons-pay-box
+            margin-bottom: 0px
+        &__social
+            display: flex
+            justify-content: center
+
+    .icons-pay
+        flex-wrap: wrap
+        justify-content: center
+        &__icon
+            height: 30px
+            margin-right: 30px
+            margin-bottom: 30px
+            &:nth-child(4)
+                margin-right: 0px
+            &:nth-child(6)
+                margin-right: 0px
+
+    .footer .social-icons img
+        width: 30px
+        height: 30px
+
+@media ( max-width: 360px)
+    //.container
+    //    width: 100%
+    #timer5fd853625fe32b760f66b23cf0ec3d080
+        min-width: 285px !important
+        height: 65px !important
+        padding: 0 !important
+        margin: 0 auto !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d080-days
+        width: 65px !important
+        height: 65px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d080-hours
+        width: 65px !important
+        height: 65px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d080-minutes
+        width: 65px !important
+        height: 65px !important
+    #timer-canvas-5fd853625fe32b760f66b23cf0ec3d080-secundes
+        width: 65px !important
+        height: 65px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d080-days
+        font-size: 28px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d080-days
+        font-size: 10px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d080-hours
+        font-size: 28px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d080-hours
+        font-size: 10px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d080-minutes
+        font-size: 28px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d080-minutes
+        font-size: 10px !important
+
+    #timer-number-5fd853625fe32b760f66b23cf0ec3d080-secundes
+        font-size: 28px !important
+    #timer-text-5fd853625fe32b760f66b23cf0ec3d080-secundes
+        font-size: 10px !important
+
+    .timer-element
+        width: 65px !important
+        height: 65px !important
+
+    .timer-separator
+        height: 65px !important
+
+    .main-section
+        &__content-container
+            flex-direction: column
+            width: 100%
+            min-height: 100%
+            margin-top: 20px
+        &__timer
+    .nav-menu
+        &__content
+            width: 100%
+    .timer
+        &__title
+            font-size: $h2_360
+            line-height: 22px
+            margin-bottom: 20px
+        &__title_bold
+            font-size: $h1_360
+            line-height: 25px
+    .left-wrapper
+        min-width: 100%
+        padding: 20px 0
+        &__title
+            font-size: $h1_360
+        &__text
+            font-size: $text_baner_360
+            line-height: 22px
+            margin-bottom: 65px
+    .right-wrapper
+        &__elipse
+            top: 110px
+            right: -40px
+            img
+                width: 225px
+                height: 225px
+        &__img
+            width: 190px
+            top: 120px
+            right: -10px
+    .items
+        &__text
+            font-size: $text_360
+        &__icon
+            min-width: 50px
+            height: 50px
+        &__img
+            width: 25px
+            height: 25px
+    .button
+        &__main-btn
+            width: 120px
+            height: 40px
+            font-size: $text_button_360
+    .left-wrapper__button .button
+        &__main-btn
+            margin-bottom: 65px
+    .curators-section
+        &__title
+            font-size: $h2_360
+            margin-bottom: 100px
+        &__goal
+            font-size: $text_360
+        &__goal-game
+            font-size: $h3_360
+        &__striped-circle_second
+            left: 260px
+            top: -840px
+        &__elipse-curators-first
+            left: -130px
+            top: 200px
+        &__elipse-curators-second
+            right: -135px
+            bottom: 410px
+    .cards
+        &__item
+            margin-bottom: 150px
+        &__foto-box
+            height: 270px
+        &__foto
+            height: 350px
+        &__info
+            margin-bottom: 15px
+        &__FIO
+            font-size: $h3_360
+            margin-bottom: 15px
+        &__profession
+            font-size: $h4_360
+            margin-bottom: 15px
+        &__description
+            font-size: $text_360
+    .striped-circle
+        &_tariffs
+            width: 180px
+            height: 180px
+        &_feedback
+            width: 150px
+            height: 150px
+    .elipse
+        &_curators-first
+            width: 160px
+            height: 160px
+        &_curators-second
+            width: 165px
+            height: 165px
+        &_feedback-left
+            width: 230px
+            height: 230px
+        &_feedback-right
+            width: 215px
+            height: 215px
+    .tariffs-section
+        padding: 30px 0
+        &__title
+            font-size: $h2_360
+    .item-tariffs
+        width: 100%
+        padding: 20px 0
+        &__title
+            font-size: $h3_360
+        &__list
+            width: 260px
+            font-size: $text_tarif_360
+            margin-bottom: 20px
+        &__price
+            font-size: $h3_360
+            margin-bottom: 20px
+        &__striped-circle
+            right: -60px
+            bottom: -75px
+    .feedback-section
+        &__form
+            padding: 20px
+        &__form-title
+            font-size: $h3_360
+            margin-bottom: 15px
+        &__form-description
+            font-size: $text_360
+            margin-bottom: 15px
+        &__form-name
+            &::placeholder
+                font-size: $text_contact_360
+        &__form-age
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_360
+        &__form-email
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_360
+        &__form-phone-number
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_360
+        &__form-comment
+            padding: 10px
+            &::placeholder
+                font-size: $text_contact_360
+        &__elipse-left
+            left: 170px
+            top: 360px
+        &__elipse-right
+            right: -60px
+            top: -110px
+        &__striped-circle
+            left: -100px
+            top: 240px
+    .reviews-section
+        &__title
+            font-size: $h2_360
+        .reviews-section
+        padding: 30px 0
+        &__title
+            font-size: $h2_480
+            margin-bottom: 30px
+
+    .arrows
+        &__left
+            margin-right: 20px
+
+    .reviews
+        &__avatar
+            max-width: 120px
+            margin-bottom: 10px
+        &__text
+            font-size: $text_reviews_autor_360
+        &__autor
+            font-size: $text_reviews_autor_360
+    .social-icons__item img
+        width: 30px
+        height: 30px
+    .footer
+        &__organization
+            &-text
+                font-size: $text_360
+        &__phone
+            &-info
+                font-size: $text_360
+        &__contacts
+            flex-direction: column
+            justify-content: center
+        &__icons-pay-box
+            margin-bottom: 0px
+        &__social
+            display: flex
+            justify-content: center
+    .icons-pay
+        flex-wrap: wrap
+        justify-content: center
+        &__icon
+            height: 20px
+            margin-right: 30px
+            margin-bottom: 20px
+            &:nth-child(4)
+                margin-right: 0px
+            &:nth-child(6)
+                margin-right: 0px
+    .footer .social-icons img
+        width: 30px
+        height: 30px
